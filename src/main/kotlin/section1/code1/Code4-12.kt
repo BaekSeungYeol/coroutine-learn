@@ -4,7 +4,8 @@ import kotlinx.coroutines.*
 
 fun main() = runBlocking {
     val longJob: Job = launch(Dispatchers.Default) {
-        Thread.sleep(1000L)
+//        Thread.sleep(1000L)
+        delay(1000L)
         println("longJob 코루틴의 동작")
     }
 
